@@ -1,6 +1,16 @@
-# Voice Spoofing Detection System
+# VoxGuard-AI
 
-A local AI-based system to detect legitimate vs. spoofed (deepfake) audio using Deep Learning.
+**VoxGuard-AI** is a local AI-based system designed to detect legitimate vs. spoofed (deepfake) audio using Deep Learning.
+
+## Problem Statement
+In an era where generative AI can synthesize hyper-realistic human voices, the risk of voice spoofing and deepfake audio is escalating. These technologies can be misused for fraud, impersonation, and misinformation. **VoxGuard-AI** aims to solve this by providing a robust, deep learning-based detection mechanism that can analyze audio signals and distinguish between genuine human speech and artificially generated or replayed audio.
+
+## Tech Stack
+- **Backend Framework**: FastAPI (Python)
+- **Deep Learning**: PyTorch
+- **Audio Processing**: Librosa, SoundFile, NumPy
+- **Frontend**: v0 (React/Next.js based UI)
+- **Model Architecture**: Convolutional Neural Network (CNN) trained on MFCC features
 
 ## Project Structure
 
