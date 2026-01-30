@@ -50,17 +50,17 @@ Predicted label (Genuine / Spoofed)
 
 Confidence score
 
-🧩 Project Structure
 voice_spoofing_detection/
 ├── backend/
-│   ├── app.py              # FastAPI application & API endpoints
-│   ├── model.py            # PyTorch model definition & inference logic
-│   ├── audio_utils.py      # Audio preprocessing and MFCC extraction
+│   ├── app.py              # FastAPI application
+│   ├── model.py            # PyTorch model definition
+│   ├── audio_utils.py      # Audio preprocessing & feature extraction
 │   ├── requirements.txt    # Python dependencies
 │   └── weights/
-│       └── best_model.pth  # Pretrained / placeholder model weights
-├── README.md               # Project documentation
-└── test_pipeline.py        # Backend testing script
+│       └── best_model.pth  # Pre-trained model weights
+├── README.md               # This file
+└── test_pipeline.py        # Testing script
+```
 
 🛠️ Tech Stack (Minimal & Purpose-Driven)
 Backend
