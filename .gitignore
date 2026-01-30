@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Environment Variables
+.env
+
+# Large Files (Weights)
+# backend/weights/*.pth
+# Uncomment above if you do NOT want to commit weights. 
+# Since best_model.pth is ~70MB, it is strictly below GitHub's 100MB limit, 
+# but close to the 50MB warning. We will include it for now as requested.
+
+# IDE
+.vscode/
+.idea/
