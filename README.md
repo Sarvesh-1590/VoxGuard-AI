@@ -67,5 +67,23 @@ The API will be available at `http://127.0.0.1:8000`.
 
 ## Frontend Integration
 
-The backend is configured with CORS to allow connections from any origin (`*`), making it compatible with frontend tools like v0.dev.
-Connect your frontend to `http://127.0.0.1:8000/analyze-audio`.
+This project is designed to work with the **VoxGuard AI** frontend.
+
+**Frontend URL**: [https://v0-voice-spoofing-detection-ui.vercel.app/](https://v0-voice-spoofing-detection-ui.vercel.app/)
+
+### Connecting the Frontend
+The frontend is hosted on Vercel (HTTPS), while your backend runs locally (HTTP). To allow them to communicate, you have two options:
+
+#### Option 1: Live Frontend (Requires Mixed Content Allowance)
+1.  Run the backend: `uvicorn app:app --reload`
+2.  Open the [Frontend URL](https://v0-voice-spoofing-detection-ui.vercel.app/).
+3.  **Important**: Since the backend is HTTP and frontend is HTTPS, your browser might block the request. You may need to:
+    -   Click the "shield" icon in the URL bar and "Allow Unsafe Scripts" or "Allow Insecure Content".
+    -   OR use a tunneling service like [ngrok](https://ngrok.com/) to expose your local server as HTTPS:
+        ```bash
+        ngrok http 8000
+        ```
+        Then, if the frontend supports changing the API URL, point it to the ngrok URL.
+
+#### Option 2: Run Frontend Locally (Recommended)
+If you have the frontend code (export from v0), run it locally to avoid HTTPS/HTTP issues.
